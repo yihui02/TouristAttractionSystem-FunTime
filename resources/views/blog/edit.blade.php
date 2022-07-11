@@ -30,16 +30,18 @@
         @csrf
         @method('PUT')
 
-        <input 
+        <input
+            style="width:60rem"
             type="text"
             name="title"
             value="{{ $post->title }}"
-            class="bg-transparent block border-b-3 w-25 h-20 text-6xl outline-none"><br><br><br>
+            class="bg-transparent block border-b-3 text-6xl outline-none"><br><br><br>
 
-        <textarea 
+        <textarea
+            style="height:25rem; width:60rem"
             name="description"
             placeholder="Description..."
-            class="py-20 bg-transparent block border-b-2 w-25 h-60 text-xl outline-none">{{ $post->description }}</textarea> <br><br><br>
+            class="py-20 bg-transparent block border-b-2 text-xl outline-none">{{ $post->description }}</textarea> <br><br><br>
 
         <button    
             type="submit"

@@ -29,19 +29,21 @@
         enctype="multipart/form-data">
         @csrf
 
-        <input 
+        <input
+            style="width:60rem"
             type="text"
             name="title"
             placeholder="Title..."
-            class="bg-transparent block border-center w-25 h-20 text-6xl outline-none"><br><br><br>
+            class="bg-transparent block border-center text-6xl outline-none"><br><br><br>
 
         <textarea 
+            style="height:25rem; width:60rem"
             name="description"
             placeholder="Description..."
-            class="py-20 bg-transparent block border-b-2 w-25 h-60 text-xl outline-none"></textarea><br><br><br>
+            class="py-20 bg-transparent block border-b-2 text-xl outline-none"></textarea><br><br><br>
 
         <div class="bg-grey-lighter pt-15">
-            <label class="w-25 flex flex-col items-center px-2 py-3 bg-white-rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
+            <label style="width:60rem;" class="flex flex-col items-center px-2 py-3 bg-white-rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
                 <span class="mt-2 text-base leading-normal">
                     Select a file
                 </span>
